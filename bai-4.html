@@ -15,7 +15,7 @@
         this.y = y;
         this.radius = radius;
         this.color = color;
-        this.circle = function () {
+        this.render = function () {
             var canvas = document.getElementById("myCanvas");
             var ctx = canvas.getContext("2d");
             ctx.beginPath();
@@ -28,6 +28,6 @@
         }
     }
     var circle = new Circle(10, 10, 100, "#000000")
-    var displayCircle = circle.circle()
+    circle.render()
 </script>
 </html>
