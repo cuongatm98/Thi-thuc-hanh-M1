@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isFibonacci(x) {
+        let count = 0
+        let arr = [];
+        let a = 1, b = 0, temp;
+        for (let i = 0; i <= x; i++) {
+            temp = a;
+            a = a + b;
+            b = temp;
+            arr.push(b);
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                document.write(x + " thuộc dãy fibonacci")
+            } else {
+                count++
+            }
+        }
+        if (count >= arr.length) {
+            document.write(x + " không thuộc dãy fibonacci")
+        }
+
+    }
+
+    isFibonacci(55)
+</script>
+</html>
