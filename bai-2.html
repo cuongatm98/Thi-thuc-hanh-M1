@@ -10,16 +10,17 @@
 
 </html>
 <script>
-    arr = [7, 2, 3, 4, 6, 5, 9, 6, 10]
+    arr = [7, 2, 3, 4,4, 6, 5, 9, 6, 10]
 
     function findMax(arr, x) {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 arr.splice(i, 1);
+                i--
             }
         }
         document.write(arr)
     }
 
-    findMax(arr, 6)
+    findMax(arr, 4)
 </script>
